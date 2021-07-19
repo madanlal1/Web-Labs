@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        var count = 0;
+        $(document).ready(function(){
+            $("#img1").mouseenter(function(){
+                $("#img1").attr("src", "images/ryu_animated.gif")
+            });
+            $("#img1").mouseleave(function(){
+                $("#img1").attr("src", "images/ryu_stand_still.png")
+                $("#img2").attr("src", "images/hadouken.gif")
+            });
+            $("#img1").click(function(){
+                $("#img1").attr("src", "images/ryu_hadouken_pose.png")
+                $("#img2").removeAttr("src", "images/hadouken.gif")
+                count++;
+                $("#H11").text("Score is: "+count);
+            });
+        })
+    </script>
+    <style>
+        img2{float: right;}
+        h1
+        {
+            font-family: sans-serif; 
+            font-size: large;
+            color: rgb(18, 151, 228);
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="images/ryu_stand_still.png" width="320px">
+    <img id="img2" src="images/hadouken.gif" width="320px">
+    <h1 id="H11">Score is: 0</h1>
+</body>
+</html>

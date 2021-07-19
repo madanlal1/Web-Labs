@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+            $("button").click(function(){
+
+                $(".secret").slideUp();
+            });
+        })
+    </script>
+</head>
+<body>
+    <button id="clicker">Click me to hide the hidden secrets!</button>
+    <p class="secret">I am hidden secret #1.</p>
+    <p class="secret">I am hidden secret #2.</p>
+    <p class="secret">I am hidden secret #2.</p>
+    <p>I am <em>not</em> a hidden secret.</p>
+</body>
+</html>

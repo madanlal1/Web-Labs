@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnAdd").click(function(){
+                var title = $("#titleId").val();
+                var rating = $("#ratingId").val();
+                var btn = `<button id="btnDelete" class="btn btn-danger">Delete</button>`
+                $("table").append("<tr><td>"+title+"</td><td>"+rating+"</td><td>"+btn+"</td></tr>")
+            })
+
+            $("btnDelete").click(function(){
+                console.log("okay");
+                $(this).parents('table tr').first().remove();
+            }) 
+            
+            
+        });
+        //Search bar
+        const searchFunction = () =>{
+            let filter = $("#searchBar").val().toUpperCase();
+            
+            let Table = $("#myTable");
+            let tr = $('table tr');
+
+            for(let i=0; i<tr.length; i++){
+                let td = tr[i].getElementsByTagName("td")[0];
+                if(td)
+                {
+                    let textValue = td.textContent || td.innerHTML;
+
+                    if(textValue.toUpperCase().indexOf(filter) > -1)
+                    {
+                        tr[i].style.display = "";
+                    }
+                    else
+                    {
+                        tr[i].style.display = "none";
+                    }
+                }
+
+                }
+            }
+    </script>
+    <style>
+        table{margin: 20px;}
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+            <center>
+            <h1>My Favorite Movies</h1>
+            </center>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+                <label>Title</label>
+            </div>
+            <div class="col-sm-4">
+                <input id="titleId" type="text" placeholder="Movie Title" class="form-control">
+            </div>
+            <div class="col-sm-1">
+                <label>Rating</label>
+            </div>
+            <div class="col-sm-4">
+                <input id="ratingId" type="text" placeholder="Rate the movie from 0 to 10" class="form-control">
+            </div>
+            <div class="col-sm-2">
+                <button id="btnAdd" class="btn btn-primary" >Add Movie</button>
+            </div>
+        </div>
+        <div style="margin: 20px;" class="row">
+            <input id="searchBar" onkeyup="searchFunction()" type="text" placeholder="Search here..." class="form-control">
+        </div>
+        <div class="row">
+            
+            <table id="myTable" class="table-striped">
+                <tr class="header">
+                    <th>Title</th>
+                    <th>Rating</th>
+                    <th>Delete</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+   
+
+</body>
+</html>

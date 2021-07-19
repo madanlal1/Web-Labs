@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $("button").click(function(){
+
+                var Fname = $("#fname").val();
+                var Lname = $("#lname").val();
+                var Uname = $("#uname").val();
+                var City = $("#city").val();
+                var State = $("#state").val();
+                var Zip = $("#zip").val();
+
+                localStorage.setItem("First Name", Fname)
+                localStorage.setItem("Last Name", Lname)
+                localStorage.setItem("Username", Uname)
+                localStorage.setItem("City", City)
+                localStorage.setItem("State", State)
+                localStorage.setItem("Zip", Zip)
+
+                alert("Data is saved in local storage :)")
+
+                $("#fname").val("");
+                $("#lname").val("");
+                $("#uname").val("");
+                $("#city").val("");
+                $("#state").val("");
+                $("#zip").val("");
+            });
+        })
+        
+    </script>
+    <style>
+        body{margin: 20px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label>First name</label>
+                <input type="text" id="fname" class="form-control is-valid" placeholder="Mark">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col">
+                <label>Last name</label>
+                <input type="text" id="lname" class="form-control is-valid" placeholder="Otto">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col">
+                <label>Username</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text is-invalid" id="basic-addon1">@</span>
+                    <input type="text" id="uname" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <label>City</label>
+                <input type="text" id="city" class="form-control is-invalid" placeholder="City">
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <label>State</label>
+                <input type="text" id="state" class="form-control is-invalid" placeholder="State">
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <label>Zip</label>
+                <input type="text" id="zip" class="form-control is-invalid" placeholder="Zip">
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+            <label><input type="checkbox"> Agree to terms and conditions</label>
+            <h4>You must agree before submitting.</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <button class="btn btn-primary">Submit form</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

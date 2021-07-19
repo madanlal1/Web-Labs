@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task4</title>
+    
+    <!-- <link rel="styleSheet" type="text/css" href="Task4CSS.css"> -->
+
+    <style>
+                #main
+        {
+            margin: -8px;
+            padding: 0px;
+        }
+        ul
+        {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            height: 36px;
+            line-height: 20px;
+            background-color: grey;
+            color: rgb(88, 179, 88);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+            
+        }
+        li
+        {
+            text-decoration: none;
+            line-height: 36px;
+            float: left;
+            border-right: 1px solid #156ee2;
+            color: whitesmoke;
+            display: block;
+        }
+        a
+        {
+            display: block;
+            padding: 0px 36px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        a:hover, .active a
+        {
+            background-color: #156ee2;
+        }        
+        .nav
+        {
+            margin: -8px -8px;
+            padding: 0px;
+        }
+        .centered {
+            position: absolute;
+            top: 75%;
+            left: 60%;
+            transform: translate(-60%, -240%);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 90px;
+            color: #156ee2;
+            font-style:unset;
+            width: 1000px;
+          }
+          .lbl
+          {
+              margin-left: 10px;
+              font-size: 40px;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-style:normal;
+              float: left;
+              color: #156ee2;
+
+          }
+          #paragraph
+          {
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            margin: 10px;
+          }
+    </style>
+
+    <script>
+        function first()
+        {
+            document.getElementById("slideimage").src="https://source.unsplash.com/1600x900/?water";
+        }
+        function second()
+        {
+            document.getElementById("slideimage").src="https://source.unsplash.com/1600x900/?environment";
+        }
+        function third()
+        {
+            document.getElementById("slideimage").src="https://source.unsplash.com/1600x900/?atmosphere";
+        }
+        
+        setInterval(first,2000);
+        setInterval(second,4000);
+        setInterval(third,6000);
+        
+    </script>
+    
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <img src="https://source.unsplash.com/1600x900/?nature" id="slideimage" width="100%"" height="500px">
+        <div class="centered">WELCOME TO OUR WEBSITE</div>
+    </div>
+</body>
+</html>

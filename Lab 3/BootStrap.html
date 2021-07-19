@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .row>[class^=col]
+        {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+        .col
+        {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">  
+                    <img src="eye.jpg" alt="EYE" width="30px" height="30px" style="margin-left:-20px; border-radius: 20px; margin-right: 10px;" class="d-inline-block align-top">
+                    <a href="" class="navbar-brand">EYE ONLINE</a>
+                    
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbaraid">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                    <div class="collapse navbar-collapse" id="navbaraid">
+
+                    <ul class="navbar-nav mr-auto" >
+    
+                      <li class="nav-item">
+                        <a class="nav-link active" class="nav-link" href="#">Home</a>
+                      </li>
+    
+                      <li class="nav-item">
+                        <a class="nav-link" class="nav-link" href="#">Link</a>
+                      </li>
+    
+                    </ul>
+
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                Column 1 of 2
+            </div>            
+            <div class="col">
+                Column 2 of 2
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-2">
+                Column 1 of 4
+            </div>
+            <div class="col-lg-3 col-sm-2">
+                Column 2 of 4
+            </div>
+            <div class="col-lg-3 col-sm-2">
+                Column 3 of 4
+            </div>
+            <div class="col-lg-3 col-sm-2">
+                Column 4 of 4
+            </div>
+        </div>
+
+        <div class="row">
+                <img src="eye.jpg" alt="eye" class="col-lg-2 col-sm-4">
+            <div class="col-lg-10 col-sm-12">
+                <h2>EYE Image</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus dolorem fugit sit vel repudiandae ipsum consequuntur fuga soluta quae, nulla modi neque corporis! Quam aspernatur facilis iste dignissimos impedit!</p>
+            </div>
+        </div>
+        <br>
+            <div class="progress">
+                <div class="progress-bar w-100 bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <form>
+                    <div class="form-group">
+                        <label class="col-lg-3 col-form-label" style="font-size: 20px;">Username:</label><br>
+                        <input class="col-lg-3  col-form-label" type="text"  >
+                    </div>
+                </form>
+            </div>
+            <br>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Add to Cart</button>
+            
+            <div class="modal fade" id="myModal" data-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Apple Pie</h5>
+                      <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Apple Pie is added to Cart</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                      <button type="button" class="btn btn-primary">View Basket</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    </div>
+</body>
+</html>

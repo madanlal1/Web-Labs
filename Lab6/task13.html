@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+</head>
+<body>
+    
+    <script>
+        
+        function extractKey(arr, name) {
+        arr.reduce(function(a, b) {
+            console.log(b[name])
+        }, [])
+        }
+
+        extractKey([{name: "Elie", isInstructor:true},{name: "Tim", isInstructor:true},{name: "Matt", isInstructor:true}], "name")
+
+    </script>
+
+</body>
+</html>

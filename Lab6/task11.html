@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+</head>
+<body>
+    <script>
+        function addKeyAndValue(arr, val1, val2)
+       {
+            var result = arr.map(function(val1,val2){
+            
+            var o = Object.assign(val1,val2);
+            o.isInstructor = true;
+            console.log(o);
+            })
+        }
+        
+        var arr = [{name: 'Elie'},{name: 'Tim'},{name: 'Elie'}];
+        addKeyAndValue(arr, "isInstructor", true)
+
+
+    </script>
+</body>
+</html>

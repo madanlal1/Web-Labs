@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task5</title>
+    <style>
+        #form
+        {
+            width: 600px;
+            height: 1200px;
+            background-color: rgb(245, 95, 75);
+            border-radius: 10px;
+            padding: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            padding-top: 30px;
+            position: relative;
+            left: 350px;
+        }
+        #in
+        {
+            border: 3px solid whitesmoke;
+            background-color: rgb(238, 146, 130);
+            border-radius: 8px;
+            width: 530px;
+            height: 45px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin: 10px;
+            
+        }
+        #lbl
+        {
+            font-size: 20px;
+        }
+        #tBox
+        {
+            width: 380px;
+            height: 25px;
+            border-radius: 5px;
+            border-color: whitesmoke;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #tBox1
+        {
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            border-color: whitesmoke;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #tBox2
+        {
+            width: 330px;
+            height: 25px;
+            border-radius: 5px;
+            border-color: whitesmoke;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #addr
+        {
+            border-radius: 5px; 
+            margin-left: 100px; 
+            font-size: 18px;
+            margin-right: 100px;
+        }
+        #BuyIt
+        {
+            border: 3px solid whitesmoke;
+            background-color: rgb(228, 212, 209);
+            border-radius: 40px;
+            width: 220px;
+            height: 45px;
+            padding: 10px;
+            padding-left: 20px;
+            padding-top: 10px;
+            margin-top: 25px;
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+            left: 170px;
+        }
+        h1
+        {
+            margin-left: 350px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Payment form</h1>
+    <div id="form">
+
+        <label style="color: rgb(49, 47, 47);">Step 1: Your details</label><br>
+
+        <div id="in">
+            <label>Name</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" placeholder="First and last name" id="tBox">
+        </div>
+
+        <div id="in">
+            <label>Email</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" placeholder="example@domain.com" id="tBox">
+        </div >
+
+        <div id="in">
+            <label>Phone</label>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" placeholder="Eg. +92345 000000" id="tBox">
+        </div>
+        
+        <label style="color: rgb(49, 47, 47);">Step 2: Delivery Address</label><br>
+
+        <div id="in" style="height: 110px;">
+            <label style="position: relative; top: -10px;">Address</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <br>
+            <textarea id="address" name="address" rows="4" cols="70" id="addr"></textarea>
+        </div>
+
+        <div id="in">
+            <label>Post Code</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="tBox2">
+        </div>
+
+        <div id="in">
+            <label>Country</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="tBox2">
+        </div>
+
+        <label style="color: rgb(49, 47, 47);">Step 3: Card Details</label><br>
+
+        <div id="in" style="height: 65px;">
+            <label>Card type</label><br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="gender" value="VISA">
+            <label id="lbl">VISA</label>
+            <input type="radio" name="gender" value="Debit">
+            <label id="lbl">Debit</label>
+            <input type="radio" name="gender" value="Mastercard">
+            <label id="lbl">Mastercard</label>
+        </div> 
+
+        <div id="in">
+            <label>Card number</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="tBox1">
+        </div>
+
+        <div id="in">
+            <label>Security code</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="tBox1">
+        </div>
+
+        <div id="in">
+            <label>Name on card</label>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" placeholder="Exact name as on the card" id="tBox1">
+        </div>
+
+        <div id="BuyIt">
+            <label>Buy It!</label>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

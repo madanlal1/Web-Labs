@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 003</title>
+
+    <script>
+        
+        function getAttributes()
+        {
+        let obj = document.getElementsByTagName('a');
+            console.log( 'id' +obj[0].getAttribute('id'));
+            console.log( 'href' +obj[0].getAttribute('href'));
+            console.log( 'hreflang' +obj[0].getAttribute('hreflang'));
+            console.log( 'rel' +obj[0].getAttribute('rel'));
+            console.log( 'target' +obj[0].getAttribute('target'));
+        }
+
+    </script>
+</head>
+<body>
+    <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+    href="http://www.w3resource.com/">w3resource</a></p>
+
+    <button onclick="getAttributes()">Click here to get attributes value</button>
+</body>
+</html>

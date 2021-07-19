@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><br>
+    <meta charset=utf-8 />
+    <title>Insert row in a table - w3resource</title>
+
+    <script>
+         
+            let obj  = document.getElementById('sampleTable');
+            let table_1 =   obj.lastElementChild
+            var row = obj.insertRow(table_1.children.length);
+            var c1 = row.insertCell(0);
+            var c2 = row.insertCell(1);
+
+     </script>
+
+</head>
+<body>
+
+    <table id="sampleTable" border="1">
+
+    <tr>
+    <td>Row1 cell1</td>
+    <td>Row1 cell2</td>
+    </tr>
+
+    <tr>
+    <td>Row2 cell1</td>
+    <td>Row2 cell2</td>
+    </tr>
+
+    </table><br>
+
+    <input type="button" onclick="insert_Row()" value="Insert row">
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 17</title>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function(){
+            //a
+            $(users).each(function(index, value){     
+                            
+                console.log(value.email);                            
+            });
+            //b
+            $(users).each(function(index, value){
+
+                console.log(value.hobbies);
+            });
+            //c
+            function findHometownByState(st)
+            {
+                
+                $(users).each(function(index, value){
+
+                    if(st == value.hometown.state)
+                    {
+                        console.log(value.hometown.city)
+                    }
+
+                });   
+
+            }
+            findHometownByState('CA')
+            //d
+            $(users).each(function(index, value){
+
+                let unique = [];
+                unique += (value.favoriteLanguages)
+                console.log(unique);
+            });
+            //e
+            function hasFavoriteEditor()
+            {
+
+            }
+            //f
+            function findByUsername(str)
+            {
+
+            }
+
+
+
+
+        });
+
+
+
+        var users = [
+        {
+            username: 'larry',
+            email: 'larry@foo.com',
+            yearsExperience: 22.1,
+            favoriteLanguages: ['Perl', 'Java', 'C++'],
+            favoriteEditor: 'Vim',
+            hobbies: ['Fishing', 'Sailing', 'Hiking'],
+
+            hometown: {
+            city: 'San Francisco',
+            state: 'CA'
+            }
+        },
+        {
+            username: 'jane',
+            email: 'jane@test.com',
+            yearsExperience: 33.9,
+            favoriteLanguages: ['Haskell', 'Clojure', 'PHP'],
+            favoriteEditor: 'Emacs',
+            hobbies: ['Swimming', 'Biking', 'Hiking'],
+
+            hometown: {
+            city: 'New York',
+            state: 'NY'
+            }
+        },
+        {
+            username: 'sam',
+            email: 'sam@test.com',
+            yearsExperience: 8.2,
+            favoriteLanguages: ['JavaScript', 'Ruby', 'Python', 'Go'],
+            favoriteEditor: 'Atom',
+            hobbies: ['Golf', 'Cooking', 'Archery'],
+
+            hometown: {
+            city: 'Fargo',
+            state: 'SD'
+            }
+        },
+        {
+            username: 'anne',
+            email: 'anne@test.com',
+            yearsExperience: 4,
+            favoriteLanguages: ['C#', 'C++', 'F#'],
+            favoriteEditor: 'Visual Studio Code',
+            hobbies: ['Tennis', 'Biking', 'Archery'],
+
+            hometown: {
+            city: 'Albany',
+            state: 'NY'
+            }
+        },
+        {
+            username: 'david',
+            email: 'david@test.com',
+            yearsExperience: 12.5,
+            favoriteLanguages: ['JavaScript', 'C#', 'Swift'],
+            favoriteEditor: 'VS Code',
+            hobbies: ['Volunteering', 'Biking', 'Coding'],
+
+            hometown: {
+            city: 'Los Angeles',
+            state: 'CA'
+            }
+        }
+        ];
+
+        
+
+    </script>
+
+</body>
+</html>

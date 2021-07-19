@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 18</title>
+</head>
+<body>
+    
+    <script>
+        
+            function removeVowel(str)
+            {
+                let count = [];
+                for(let z=0; z<str.length; z++)
+                {
+                    if(str[z] !== 'a' && str[z] !== 'e' && str[z] !== 'i' && str[z] !== 'o' && str[z] !== 'u' && str[z] !== 'A' && str[z] !== 'E' && str[z] !== 'I' && str[z] !== 'O' && str[z] !== 'U')
+                    {
+                        count.push(str[z]);
+                    }
+                }
+                console.log("Array after removeVowels: "+count)
+            }
+
+        removeVowel('sibaU')
+    </script>
+
+</body>
+</html>

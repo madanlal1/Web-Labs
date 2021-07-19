@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <title>Practice Task</title>
+</head>
+
+<body>
+    <div class="container center">
+        <div class="row mt-5 offset-1 ">
+            <div class="  col-lg-3">
+                <span id="firstName">First Name</span>
+                <input type="text" class="form-control is-valid" placeholder="Mark" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <span id="lastName">Last Name</span>
+                <input type="text" class="form-control is-valid" placeholder="Otto" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+            </div>
+
+            <div class="col-lg-3">
+                <label for="username">Username</label>
+                <div class="input-group ">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control is-invalid" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5  offset-1 ">
+            <div class=" col-lg-5">
+                <span id="city">City</span>
+                <input type="text" class="form-control is-invalid" placeholder="City" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+            </div>
+            <div class="col-lg-2">
+                <span id="state">State</span>
+                <input type="text" class="form-control is-invalid" placeholder="State" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+
+            <div class="col-lg-2">
+                <span id="zip">Zip</span>
+                <input type="text" class="form-control is-invalid" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+            <br>
+            <div class="offset-1 col-lg-11 px-4 text-danger">
+                <input type="checkbox">
+                <label>Agree tp terms and conditions</label><br>
+                <label>
+                    <h5>You must agree before submitting</h5>
+                </label>
+                <br><br>
+                <input type="button" class="btn btn-primary col-lg-2" value="Submit form">
+            </div>
+        </div>
+</body>
+
+</html>

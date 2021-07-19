@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1+2+3+4+5+6</title>
+</head>
+<body>
+
+    <script>
+
+        //Task#01 //display solution in end due to timings
+        console.log("Task#01 //solutionInEnd")
+
+        function countdown(num)
+        {
+
+                setInterval(()=> {
+
+                for(let i=0; i<num; i++)
+                {
+                    if(num != 0)
+                    {
+                        console.log(num--); 
+                    }
+                    if(num == 0)
+                    {
+                        console.log("DONE!");
+                    }
+                }
+            },1000)
+
+        }
+        
+        countdown(5);
+
+        //Task#02
+        console.log("Task#02")
+        let flag;
+
+        function isEven(num)
+        {
+            if(num%2 == 0)
+            {
+                flag = true
+            }
+            else
+            {
+                flag = false;
+            }
+
+            return flag;
+        }
+
+        console.log(isEven(2))
+        console.log(isEven(3))
+
+        //Task#03
+        console.log("Task#03")
+
+        function isOdd(num)
+        {
+            if(num%2 != 0)
+            {
+                flag = true
+            }
+            else
+            {
+                flag = false;
+            }
+
+            return flag;
+        }
+
+        console.log(isOdd(2))
+        console.log(isOdd(3))
+
+        //Task#04
+        console.log("Task#04")
+
+        function isPrime(num)
+        {
+            let prime;
+            
+            if (num == 1 || num == 2) {
+                   
+                prime = true;
+			}
+
+            for (i = 2; i <= num - 1; i++) {
+                if (num % i == 0) {
+                    
+                    prime = false;
+                    break;
+                } 
+                else 
+                {
+                    prime = true;
+                }
+            }
+
+            return prime;
+
+        }
+
+        console.log(isPrime(2))
+        console.log(isPrime(15))
+
+        //Task#05
+        console.log("Task#05")
+
+        let prime;
+
+        function isEven(num)
+        {
+            if(num%2 == 0)
+            {
+                flag = true
+            }
+            else
+            {
+                flag = false;
+            }
+
+            return flag;
+        }
+
+        function isOdd(num)
+        {
+            if(num%2 != 0)
+            {
+                flag = true
+            }
+            else
+            {
+                flag = false;
+            }
+
+            return flag;
+        }
+
+        function isPrime(num)
+        {
+            let prime;
+            
+            if (num == 1 || num == 2) {
+                   
+                prime = true;
+			}
+
+            for (i = 2; i <= num - 1; i++) {
+                if (num % i == 0) {
+                    
+                    prime = false;
+                    break;
+                } 
+                else 
+                {
+                    prime = true;
+                }
+            }
+
+            return prime;
+
+        }
+
+
+
+        function numberFact(num,callback)
+        {
+            console.log(callback(num));
+        }
+
+
+        numberFact(21,isEven);
+        numberFact(21,isOdd);
+        numberFact(21,isPrime);
+
+        //Task#06
+        console.log("Task#06")
+
+        function find(arr, callback)
+        {
+            console.log(arr.find(callback));
+        }
+
+        find([8,11,4,27], function (val){return val >= 10});    //11
+        find([8,11,4,27], function (val){return val === 5});    //undefined
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14</title>
+</head>
+<body>
+    <script>
+       
+        function filterLetters(arr,letter){
+
+            let count = 0
+
+            arr.filter(x => {
+                if(x.toLowerCase() == letter.toLowerCase()){
+                count++
+                }
+
+            })
+
+            console.log(count);
+            // document.write(count);
+        }
+
+        filterLetters(["a","a","b","c","A"], "A")
+
+    </script>
+</body>
+</html>
